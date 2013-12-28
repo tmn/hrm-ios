@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A6076758186C833C0032CF59 /* Stopwatch.m in Sources */ = {isa = PBXBuildFile; fileRef = A6076757186C833C0032CF59 /* Stopwatch.m */; };
+		A607675B186C92B80032CF59 /* Calories.m in Sources */ = {isa = PBXBuildFile; fileRef = A607675A186C92B80032CF59 /* Calories.m */; };
+		A607675D186CAFE60032CF59 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A607675C186CAFE60032CF59 /* CoreLocation.framework */; };
+		A6076763186CC7210032CF59 /* Pace.m in Sources */ = {isa = PBXBuildFile; fileRef = A6076762186CC7210032CF59 /* Pace.m */; };
+		A6076766186CC72A0032CF59 /* Distance.m in Sources */ = {isa = PBXBuildFile; fileRef = A6076765186CC72A0032CF59 /* Distance.m */; };
+		A6076769186CC73E0032CF59 /* HRMax.m in Sources */ = {isa = PBXBuildFile; fileRef = A6076768186CC73E0032CF59 /* HRMax.m */; };
+		A6076773186CDA100032CF59 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6076772186CDA100032CF59 /* MapKit.framework */; };
+		A61047C0186F0D16002F99B8 /* Elevation.m in Sources */ = {isa = PBXBuildFile; fileRef = A61047BF186F0D16002F99B8 /* Elevation.m */; };
+		A61047C3186F0D1E002F99B8 /* Speed.m in Sources */ = {isa = PBXBuildFile; fileRef = A61047C2186F0D1E002F99B8 /* Speed.m */; };
+		A61047C6186F2DD0002F99B8 /* DataWithSubtitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A61047C5186F2DD0002F99B8 /* DataWithSubtitleLabel.m */; };
+		A62EAA4A186C6E1C005FCF8C /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A62EAA49186C6E1C005FCF8C /* AboutViewController.m */; };
+		A63DFDAD186DE2D10017AA2C /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = A63DFDAC186DE2D10017AA2C /* Common.m */; };
+		A63DFDB0186DF8240017AA2C /* AlphaGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = A63DFDAF186DF8240017AA2C /* AlphaGradientView.m */; };
+		A63DFDB2186DFEFF0017AA2C /* AppDelegate in Resources */ = {isa = PBXBuildFile; fileRef = A63DFDB1186DFEFF0017AA2C /* AppDelegate */; };
+		A699747E186BB63C000FAA33 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A699747D186BB63C000FAA33 /* HelpViewController.m */; };
 		A6F20CA7186927B400EF2CD0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F20CA6186927B400EF2CD0 /* Foundation.framework */; };
 		A6F20CA9186927B400EF2CD0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F20CA8186927B400EF2CD0 /* CoreGraphics.framework */; };
 		A6F20CAB186927B400EF2CD0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F20CAA186927B400EF2CD0 /* UIKit.framework */; };
@@ -19,6 +34,24 @@
 		A6F20CC2186927B400EF2CD0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F20CAA186927B400EF2CD0 /* UIKit.framework */; };
 		A6F20CCA186927B400EF2CD0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A6F20CC8186927B400EF2CD0 /* InfoPlist.strings */; };
 		A6F20CCC186927B400EF2CD0 /* HRMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F20CCB186927B400EF2CD0 /* HRMTests.m */; };
+		A6F20CD61869280600EF2CD0 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F20CD51869280600EF2CD0 /* CoreBluetooth.framework */; };
+		A6F20CD9186939B400EF2CD0 /* PairPickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F20CD8186939B400EF2CD0 /* PairPickViewController.m */; };
+		A6F20D23186949A300EF2CD0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F20D22186949A300EF2CD0 /* MainViewController.m */; };
+		A6F20D281869839200EF2CD0 /* PebbleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F20D271869839200EF2CD0 /* PebbleKit.framework */; };
+		A6F20D2A1869839600EF2CD0 /* PebbleVendor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F20D291869839600EF2CD0 /* PebbleVendor.framework */; };
+		A6F20D2C1869840900EF2CD0 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F20D2B1869840900EF2CD0 /* ExternalAccessory.framework */; };
+		A6F20D2E1869841500EF2CD0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F20D2D1869841500EF2CD0 /* libz.dylib */; };
+		A6F20D301869842000EF2CD0 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F20D2F1869842000EF2CD0 /* CoreMotion.framework */; };
+		A6F20D321869842B00EF2CD0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F20D311869842B00EF2CD0 /* CFNetwork.framework */; };
+		A6F20D341869843200EF2CD0 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F20D331869843200EF2CD0 /* MessageUI.framework */; };
+		A6F20D3B186B6C6E00EF2CD0 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F20D3A186B6C6E00EF2CD0 /* MainMenuViewController.m */; };
+		A6F20D3E186B6CBE00EF2CD0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F20D3D186B6CBE00EF2CD0 /* QuartzCore.framework */; };
+		A6F20D47186B784A00EF2CD0 /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F20D46186B784A00EF2CD0 /* DashboardViewController.m */; };
+		A6F20D53186B7B7000EF2CD0 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F20D4B186B7B7000EF2CD0 /* MMDrawerBarButtonItem.m */; };
+		A6F20D54186B7B7000EF2CD0 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F20D4E186B7B7000EF2CD0 /* MMDrawerController.m */; };
+		A6F20D55186B7B7000EF2CD0 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F20D50186B7B7000EF2CD0 /* MMDrawerVisualState.m */; };
+		A6F20D56186B7B7000EF2CD0 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F20D52186B7B7000EF2CD0 /* UIViewController+MMDrawerController.m */; };
+		A6F20D5A186B813900EF2CD0 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F20D59186B813900EF2CD0 /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +65,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A6076756186C833C0032CF59 /* Stopwatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stopwatch.h; sourceTree = "<group>"; };
+		A6076757186C833C0032CF59 /* Stopwatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stopwatch.m; sourceTree = "<group>"; };
+		A6076759186C92B80032CF59 /* Calories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calories.h; sourceTree = "<group>"; };
+		A607675A186C92B80032CF59 /* Calories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calories.m; sourceTree = "<group>"; };
+		A607675C186CAFE60032CF59 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A6076761186CC7210032CF59 /* Pace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pace.h; sourceTree = "<group>"; };
+		A6076762186CC7210032CF59 /* Pace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pace.m; sourceTree = "<group>"; };
+		A6076764186CC72A0032CF59 /* Distance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Distance.h; sourceTree = "<group>"; };
+		A6076765186CC72A0032CF59 /* Distance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Distance.m; sourceTree = "<group>"; };
+		A6076767186CC73E0032CF59 /* HRMax.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRMax.h; sourceTree = "<group>"; };
+		A6076768186CC73E0032CF59 /* HRMax.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRMax.m; sourceTree = "<group>"; };
+		A6076772186CDA100032CF59 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A61047BE186F0D16002F99B8 /* Elevation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Elevation.h; sourceTree = "<group>"; };
+		A61047BF186F0D16002F99B8 /* Elevation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Elevation.m; sourceTree = "<group>"; };
+		A61047C1186F0D1E002F99B8 /* Speed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Speed.h; sourceTree = "<group>"; };
+		A61047C2186F0D1E002F99B8 /* Speed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Speed.m; sourceTree = "<group>"; };
+		A61047C4186F2DD0002F99B8 /* DataWithSubtitleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataWithSubtitleLabel.h; sourceTree = "<group>"; };
+		A61047C5186F2DD0002F99B8 /* DataWithSubtitleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataWithSubtitleLabel.m; sourceTree = "<group>"; };
+		A62EAA48186C6E1C005FCF8C /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		A62EAA49186C6E1C005FCF8C /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		A63DFDAB186DE2D10017AA2C /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		A63DFDAC186DE2D10017AA2C /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
+		A63DFDAE186DF8240017AA2C /* AlphaGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlphaGradientView.h; path = ../../../Downloads/alphaGradient/AlphaGradientView.h; sourceTree = "<group>"; };
+		A63DFDAF186DF8240017AA2C /* AlphaGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlphaGradientView.m; path = ../../../Downloads/alphaGradient/AlphaGradientView.m; sourceTree = "<group>"; };
+		A63DFDB1186DFEFF0017AA2C /* AppDelegate */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AppDelegate; sourceTree = "<group>"; };
+		A699747C186BB63C000FAA33 /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
+		A699747D186BB63C000FAA33 /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
 		A6F20CA3186927B400EF2CD0 /* HRM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HRM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6F20CA6186927B400EF2CD0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A6F20CA8186927B400EF2CD0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +108,34 @@
 		A6F20CC7186927B400EF2CD0 /* HRMTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HRMTests-Info.plist"; sourceTree = "<group>"; };
 		A6F20CC9186927B400EF2CD0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A6F20CCB186927B400EF2CD0 /* HRMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HRMTests.m; sourceTree = "<group>"; };
+		A6F20CD51869280600EF2CD0 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		A6F20CD7186939B400EF2CD0 /* PairPickViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PairPickViewController.h; sourceTree = "<group>"; };
+		A6F20CD8186939B400EF2CD0 /* PairPickViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PairPickViewController.m; sourceTree = "<group>"; };
+		A6F20D21186949A300EF2CD0 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		A6F20D22186949A300EF2CD0 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		A6F20D271869839200EF2CD0 /* PebbleKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PebbleKit.framework; path = "../../pebble-dev/PebbleSDK-2.0-BETA4/PebbleKit-iOS/PebbleKit.framework"; sourceTree = "<group>"; };
+		A6F20D291869839600EF2CD0 /* PebbleVendor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PebbleVendor.framework; path = "../../pebble-dev/PebbleSDK-2.0-BETA4/PebbleKit-iOS/PebbleVendor.framework"; sourceTree = "<group>"; };
+		A6F20D2B1869840900EF2CD0 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		A6F20D2D1869841500EF2CD0 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		A6F20D2F1869842000EF2CD0 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		A6F20D311869842B00EF2CD0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		A6F20D331869843200EF2CD0 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		A6F20D39186B6C6E00EF2CD0 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
+		A6F20D3A186B6C6E00EF2CD0 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
+		A6F20D3D186B6CBE00EF2CD0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A6F20D45186B784A00EF2CD0 /* DashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashboardViewController.h; sourceTree = "<group>"; };
+		A6F20D46186B784A00EF2CD0 /* DashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardViewController.m; sourceTree = "<group>"; };
+		A6F20D4A186B7B7000EF2CD0 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		A6F20D4B186B7B7000EF2CD0 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		A6F20D4C186B7B7000EF2CD0 /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		A6F20D4D186B7B7000EF2CD0 /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		A6F20D4E186B7B7000EF2CD0 /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		A6F20D4F186B7B7000EF2CD0 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		A6F20D50186B7B7000EF2CD0 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		A6F20D51186B7B7000EF2CD0 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		A6F20D52186B7B7000EF2CD0 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		A6F20D58186B813900EF2CD0 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		A6F20D59186B813900EF2CD0 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +143,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6076773186CDA100032CF59 /* MapKit.framework in Frameworks */,
+				A607675D186CAFE60032CF59 /* CoreLocation.framework in Frameworks */,
+				A6F20D3E186B6CBE00EF2CD0 /* QuartzCore.framework in Frameworks */,
+				A6F20D341869843200EF2CD0 /* MessageUI.framework in Frameworks */,
+				A6F20D321869842B00EF2CD0 /* CFNetwork.framework in Frameworks */,
+				A6F20D301869842000EF2CD0 /* CoreMotion.framework in Frameworks */,
+				A6F20D2E1869841500EF2CD0 /* libz.dylib in Frameworks */,
+				A6F20D2C1869840900EF2CD0 /* ExternalAccessory.framework in Frameworks */,
+				A6F20D2A1869839600EF2CD0 /* PebbleVendor.framework in Frameworks */,
+				A6F20D281869839200EF2CD0 /* PebbleKit.framework in Frameworks */,
+				A6F20CD61869280600EF2CD0 /* CoreBluetooth.framework in Frameworks */,
 				A6F20CA9186927B400EF2CD0 /* CoreGraphics.framework in Frameworks */,
 				A6F20CAB186927B400EF2CD0 /* UIKit.framework in Frameworks */,
 				A6F20CA7186927B400EF2CD0 /* Foundation.framework in Frameworks */,
@@ -74,6 +173,79 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A6076752186C81D90032CF59 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A6076756186C833C0032CF59 /* Stopwatch.h */,
+				A6076757186C833C0032CF59 /* Stopwatch.m */,
+				A6076759186C92B80032CF59 /* Calories.h */,
+				A607675A186C92B80032CF59 /* Calories.m */,
+				A6076764186CC72A0032CF59 /* Distance.h */,
+				A6076765186CC72A0032CF59 /* Distance.m */,
+				A6076761186CC7210032CF59 /* Pace.h */,
+				A6076762186CC7210032CF59 /* Pace.m */,
+				A6076767186CC73E0032CF59 /* HRMax.h */,
+				A6076768186CC73E0032CF59 /* HRMax.m */,
+				A61047BE186F0D16002F99B8 /* Elevation.h */,
+				A61047BF186F0D16002F99B8 /* Elevation.m */,
+				A61047C1186F0D1E002F99B8 /* Speed.h */,
+				A61047C2186F0D1E002F99B8 /* Speed.m */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		A607675E186CB2B30032CF59 /* View - run */ = {
+			isa = PBXGroup;
+			children = (
+				A6F20D21186949A300EF2CD0 /* MainViewController.h */,
+				A6F20D22186949A300EF2CD0 /* MainViewController.m */,
+			);
+			name = "View - run";
+			sourceTree = "<group>";
+		};
+		A607675F186CB2DA0032CF59 /* Left */ = {
+			isa = PBXGroup;
+			children = (
+				A6F20D39186B6C6E00EF2CD0 /* MainMenuViewController.h */,
+				A6F20D3A186B6C6E00EF2CD0 /* MainMenuViewController.m */,
+			);
+			name = Left;
+			sourceTree = "<group>";
+		};
+		A6076760186CB2ED0032CF59 /* Right */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Right;
+			sourceTree = "<group>";
+		};
+		A62EAA47186C6E10005FCF8C /* View - about */ = {
+			isa = PBXGroup;
+			children = (
+				A62EAA48186C6E1C005FCF8C /* AboutViewController.h */,
+				A62EAA49186C6E1C005FCF8C /* AboutViewController.m */,
+			);
+			name = "View - about";
+			sourceTree = "<group>";
+		};
+		A699747B186BB625000FAA33 /* View - help */ = {
+			isa = PBXGroup;
+			children = (
+				A699747C186BB63C000FAA33 /* HelpViewController.h */,
+				A699747D186BB63C000FAA33 /* HelpViewController.m */,
+			);
+			name = "View - help";
+			sourceTree = "<group>";
+		};
+		A699747F186BC429000FAA33 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A6F20CD7186939B400EF2CD0 /* PairPickViewController.h */,
+				A6F20CD8186939B400EF2CD0 /* PairPickViewController.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
 		A6F20C9A186927B400EF2CD0 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +268,17 @@
 		A6F20CA5186927B400EF2CD0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A6076772186CDA100032CF59 /* MapKit.framework */,
+				A607675C186CAFE60032CF59 /* CoreLocation.framework */,
+				A6F20D3D186B6CBE00EF2CD0 /* QuartzCore.framework */,
+				A6F20D331869843200EF2CD0 /* MessageUI.framework */,
+				A6F20D311869842B00EF2CD0 /* CFNetwork.framework */,
+				A6F20D2F1869842000EF2CD0 /* CoreMotion.framework */,
+				A6F20D2D1869841500EF2CD0 /* libz.dylib */,
+				A6F20D2B1869840900EF2CD0 /* ExternalAccessory.framework */,
+				A6F20D291869839600EF2CD0 /* PebbleVendor.framework */,
+				A6F20D271869839200EF2CD0 /* PebbleKit.framework */,
+				A6F20CD51869280600EF2CD0 /* CoreBluetooth.framework */,
 				A6F20CA6186927B400EF2CD0 /* Foundation.framework */,
 				A6F20CA8186927B400EF2CD0 /* CoreGraphics.framework */,
 				A6F20CAA186927B400EF2CD0 /* UIKit.framework */,
@@ -107,9 +290,19 @@
 		A6F20CAC186927B400EF2CD0 /* HRM */ = {
 			isa = PBXGroup;
 			children = (
+				A6076752186C81D90032CF59 /* Modules */,
+				A6F20D5B186B873000EF2CD0 /* Utilities */,
+				A62EAA47186C6E10005FCF8C /* View - about */,
+				A6F20D48186B787800EF2CD0 /* View - dashboard */,
+				A699747B186BB625000FAA33 /* View - help */,
+				A607675E186CB2B30032CF59 /* View - run */,
+				A6F20D57186B811E00EF2CD0 /* View - settings */,
+				A6F20D3C186B6C7400EF2CD0 /* Sidepanels */,
 				A6F20CB5186927B400EF2CD0 /* AppDelegate.h */,
 				A6F20CB6186927B400EF2CD0 /* AppDelegate.m */,
+				A63DFDB1186DFEFF0017AA2C /* AppDelegate */,
 				A6F20CB8186927B400EF2CD0 /* Images.xcassets */,
+				A6F20D49186B7B7000EF2CD0 /* MMDrawerController */,
 				A6F20CAD186927B400EF2CD0 /* Supporting Files */,
 			);
 			path = HRM;
@@ -142,6 +335,63 @@
 				A6F20CC8186927B400EF2CD0 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A6F20D3C186B6C7400EF2CD0 /* Sidepanels */ = {
+			isa = PBXGroup;
+			children = (
+				A6076760186CB2ED0032CF59 /* Right */,
+				A607675F186CB2DA0032CF59 /* Left */,
+			);
+			name = Sidepanels;
+			sourceTree = "<group>";
+		};
+		A6F20D48186B787800EF2CD0 /* View - dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				A6F20D45186B784A00EF2CD0 /* DashboardViewController.h */,
+				A6F20D46186B784A00EF2CD0 /* DashboardViewController.m */,
+			);
+			name = "View - dashboard";
+			sourceTree = "<group>";
+		};
+		A6F20D49186B7B7000EF2CD0 /* MMDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				A6F20D4A186B7B7000EF2CD0 /* MMDrawerBarButtonItem.h */,
+				A6F20D4B186B7B7000EF2CD0 /* MMDrawerBarButtonItem.m */,
+				A6F20D4C186B7B7000EF2CD0 /* MMDrawerController+Subclass.h */,
+				A6F20D4D186B7B7000EF2CD0 /* MMDrawerController.h */,
+				A6F20D4E186B7B7000EF2CD0 /* MMDrawerController.m */,
+				A6F20D4F186B7B7000EF2CD0 /* MMDrawerVisualState.h */,
+				A6F20D50186B7B7000EF2CD0 /* MMDrawerVisualState.m */,
+				A6F20D51186B7B7000EF2CD0 /* UIViewController+MMDrawerController.h */,
+				A6F20D52186B7B7000EF2CD0 /* UIViewController+MMDrawerController.m */,
+			);
+			path = MMDrawerController;
+			sourceTree = "<group>";
+		};
+		A6F20D57186B811E00EF2CD0 /* View - settings */ = {
+			isa = PBXGroup;
+			children = (
+				A699747F186BC429000FAA33 /* Settings */,
+				A6F20D58186B813900EF2CD0 /* SettingsViewController.h */,
+				A6F20D59186B813900EF2CD0 /* SettingsViewController.m */,
+			);
+			name = "View - settings";
+			sourceTree = "<group>";
+		};
+		A6F20D5B186B873000EF2CD0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A61047C4186F2DD0002F99B8 /* DataWithSubtitleLabel.h */,
+				A61047C5186F2DD0002F99B8 /* DataWithSubtitleLabel.m */,
+				A63DFDAE186DF8240017AA2C /* AlphaGradientView.h */,
+				A63DFDAF186DF8240017AA2C /* AlphaGradientView.m */,
+				A63DFDAB186DE2D10017AA2C /* Common.h */,
+				A63DFDAC186DE2D10017AA2C /* Common.m */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +471,7 @@
 			files = (
 				A6F20CB1186927B400EF2CD0 /* InfoPlist.strings in Resources */,
 				A6F20CB9186927B400EF2CD0 /* Images.xcassets in Resources */,
+				A63DFDB2186DFEFF0017AA2C /* AppDelegate in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +490,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6076769186CC73E0032CF59 /* HRMax.m in Sources */,
+				A6F20D56186B7B7000EF2CD0 /* UIViewController+MMDrawerController.m in Sources */,
+				A6076758186C833C0032CF59 /* Stopwatch.m in Sources */,
+				A61047C3186F0D1E002F99B8 /* Speed.m in Sources */,
+				A607675B186C92B80032CF59 /* Calories.m in Sources */,
+				A61047C0186F0D16002F99B8 /* Elevation.m in Sources */,
+				A6F20D55186B7B7000EF2CD0 /* MMDrawerVisualState.m in Sources */,
+				A63DFDAD186DE2D10017AA2C /* Common.m in Sources */,
 				A6F20CB7186927B400EF2CD0 /* AppDelegate.m in Sources */,
+				A6F20D5A186B813900EF2CD0 /* SettingsViewController.m in Sources */,
+				A6F20D53186B7B7000EF2CD0 /* MMDrawerBarButtonItem.m in Sources */,
+				A61047C6186F2DD0002F99B8 /* DataWithSubtitleLabel.m in Sources */,
+				A6F20CD9186939B400EF2CD0 /* PairPickViewController.m in Sources */,
+				A6F20D47186B784A00EF2CD0 /* DashboardViewController.m in Sources */,
+				A6076766186CC72A0032CF59 /* Distance.m in Sources */,
+				A6F20D23186949A300EF2CD0 /* MainViewController.m in Sources */,
+				A6076763186CC7210032CF59 /* Pace.m in Sources */,
+				A699747E186BB63C000FAA33 /* HelpViewController.m in Sources */,
+				A6F20D3B186B6C6E00EF2CD0 /* MainMenuViewController.m in Sources */,
+				A63DFDB0186DF8240017AA2C /* AlphaGradientView.m in Sources */,
+				A6F20D54186B7B7000EF2CD0 /* MMDrawerController.m in Sources */,
+				A62EAA4A186C6E1C005FCF8C /* AboutViewController.m in Sources */,
 				A6F20CB3186927B400EF2CD0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,10 +633,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/tmn/pebble-dev/PebbleSDK-2.0-BETA4/PebbleKit-iOS",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HRM/HRM-Prefix.pch";
 				INFOPLIST_FILE = "HRM/HRM-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -374,10 +653,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/tmn/pebble-dev/PebbleSDK-2.0-BETA4/PebbleKit-iOS",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HRM/HRM-Prefix.pch";
 				INFOPLIST_FILE = "HRM/HRM-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -443,6 +729,7 @@
 				A6F20CD1186927B400EF2CD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A6F20CD2186927B400EF2CD0 /* Build configuration list for PBXNativeTarget "HRMTests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +738,7 @@
 				A6F20CD4186927B400EF2CD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

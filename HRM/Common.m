@@ -10,4 +10,20 @@
 
 @implementation Common
 
+
++ (CGSize)setSizeWithAttributeOn:(NSString *)string with:(UIFont *)font
+{
+    CGSize size;
+    
+    if ([[[UIFont alloc] init] respondsToSelector:@selector(sizeWithAttributes:)])
+    {
+        size   = [string sizeWithAttributes:@{NSFontAttributeName:font}];
+    }
+    else
+    {
+        size   = [string sizeWithFont:font];
+    }
+
+    return size;
+}
 @end

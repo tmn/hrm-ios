@@ -23,6 +23,11 @@
     return self;
 }
 
+- (void)loadView
+{
+    [super loadView];
+    [self.view setBackgroundColor:[UIColor colorWithRed:13.0/255.0 green:13.0/255.0 blue:22.0/255.0 alpha:1]];
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];

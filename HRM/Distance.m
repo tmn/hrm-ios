@@ -10,22 +10,35 @@
 
 @implementation Distance
 
-- (id)initWithFrame:(CGRect)frame
+- (void)calculateDistanceSinceStart:(id)oldDistance withNewDistance:(id)newDistance
 {
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code
+    
+}
+
+- (void)calculateCurrentDistanceWith:(CLLocation *)location
+{
+    if ([registeredLocations lastObject] != nil)
+    {
+        totalDistance += [location distanceFromLocation:[registeredLocations lastObject]];
     }
-    return self;
+    
+    
+    [self registerLocation:location];
+    [self updateDisplayText:[NSString stringWithFormat:@"%.02f m", totalDistance/1000]];
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
+- (void)registerLocation:(CLLocation *)location
 {
-    // Drawing code
+    if (registeredLocations == nil)
+    {
+        registeredLocations = [NSMutableArray array];
+    }
+    
+    [registeredLocations addObject:location];
 }
-*/
 
+- (void)resetRegisteredLocations
+{
+    registeredLocations = nil;
+}
 @end

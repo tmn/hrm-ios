@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DataWithSubtitleLabel.h"
 
-@interface Elevation : UIView
+@interface Elevation : DataWithSubtitleLabel
 
 @end

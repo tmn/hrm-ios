@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DataWithSubtitleLabel.h"
 
-@interface HRMax : UIView
+@interface HRMax : DataWithSubtitleLabel
+{
+    NSInteger maxHeartRate;
+}
+
+- (void)registerHeartRate:(NSInteger)hr;
 
 @end

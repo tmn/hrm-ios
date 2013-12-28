@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DataWithSubtitleLabel.h"
 
-@interface Pace : UIView
+@interface Pace : DataWithSubtitleLabel
 
 @end

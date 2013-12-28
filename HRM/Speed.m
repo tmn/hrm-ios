@@ -10,22 +10,8 @@
 
 @implementation Speed
 
-- (id)initWithFrame:(CGRect)frame
+- (void)updateText:(NSString *)text
 {
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code
-    }
-    return self;
+    [self updateDisplayText:text];
 }
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
-
 @end

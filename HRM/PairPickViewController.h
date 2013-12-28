@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface PairPickViewController : UIViewController
+{
+    UITableView *tableView;
+}
+
 
 @end

@@ -10,22 +10,12 @@
 
 @implementation HRMax
 
-- (id)initWithFrame:(CGRect)frame
+- (void)registerHeartRate:(NSInteger)hr
 {
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code
+    if (maxHeartRate < hr)
+    {
+        maxHeartRate = hr;
+        [self updateDisplayText:[NSString stringWithFormat:@"%i", maxHeartRate]];
     }
-    return self;
 }
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
-
 @end

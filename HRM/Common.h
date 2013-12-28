@@ -10,4 +10,6 @@
 
 @interface Common : NSObject
 
+
++ (CGSize)setSizeWithAttributeOn:(NSString *)string with:(UIFont *)font;
 @end

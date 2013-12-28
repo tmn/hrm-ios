@@ -7,7 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
+#import "DataWithSubtitleLabel.h"
 
-@interface Distance : UIView
+@interface Distance : DataWithSubtitleLabel
+{
+    CLLocationDistance totalDistance;
+    
+    NSMutableArray *registeredLocations;
+}
+
+- (void)calculateDistanceSinceStart:(id)oldDistance withNewDistance:(id)newDistance;
+
+- (void)calculateCurrentDistanceWith:(CLLocation *)location;
+- (void)resetRegisteredLocations;
+- (void)registerLocation:(CLLocation *)location;
 
 @end

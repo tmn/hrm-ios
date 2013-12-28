@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DataWithSubtitleLabel.h"
 
-@interface Speed : UIView
+@interface Speed : DataWithSubtitleLabel
 
+- (void)updateText:(NSString *)text;
 @end

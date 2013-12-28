@@ -7,7 +7,28 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PairPickViewController.h"
 
-@interface SettingsViewController : UIViewController
+#import "AppDelegate.h"
 
+
+@interface SettingsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+{
+    PairPickViewController *pairDeviceView;
+    
+    IBOutlet UIButton* pairButton;
+    
+    UITableView *_tableView;
+    
+    UIScrollView *mainScrollView;
+    
+    NSMutableArray *menuSections;
+    NSMutableArray *preferencesSection;
+    NSMutableArray *accountSection;
+}
+
+@property (nonatomic, retain) PairPickViewController *pairDeviceView;
+
+
+- (IBAction) pairButtonPressed:(id)sender;
 @end

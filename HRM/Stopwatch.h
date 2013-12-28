@@ -7,7 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Common.h"
 
 @interface Stopwatch : UIView
+{
+    UILabel *timerDisplay;
+    UILabel *titleText;
+    
+    NSTimer *stopTimer;
+    NSDate *startDate;
+    NSDate *pauseDate;
+    
+    NSTimeInterval timeInterval;
+    
+    BOOL running;
+}
+
+- (void)updateTimer;
+- (void)startStopTimer;
+- (void)resetStopTimer;
 
 @end

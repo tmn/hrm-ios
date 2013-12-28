@@ -7,7 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIViewController+MMDrawerController.h"
 
-@interface MainMenuViewController : UIViewController
+@interface MainMenuViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+{
+    UITableView *_tableView;
+    
+    UINavigationController *mainView;
+    
+    NSMutableArray *menuSections;
+    NSMutableArray *personalSection;
+    NSMutableArray *otherSection;
+}
+
++ (NSInteger) PERSONAL_SECTION;
++ (NSInteger) OTHER_SECTION;
+
+- (id)initWithMainView:(id)view;
+//- (void)addView:(UINavigationController *)navview;
+- (void)addViewToSection:(UINavigationController *)view atSection:(NSInteger)section;
 
 @end

@@ -7,12 +7,12 @@
 //
 
 #import "PairPickViewController.h"
+#import "AppDelegate.h"
 
-@interface PairPickViewController ()
-
-@end
 
 @implementation PairPickViewController
+
+#define mainNavController (((AppDelegate*)[[UIApplication sharedApplication] delegate]).myNav)
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -23,16 +23,58 @@
     return self;
 }
 
+- (void)loadView
+{
+    [super loadView];
+    
+    
+    
+    AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadTableViewData) name:@"ReloadAppDelegateTable" object:nil];
+
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    tableView = [[UITableView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame] style:UITableViewStyleGrouped];
+    tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
+    tableView.delegate = appDelegate;
+    tableView.dataSource = appDelegate;
+    [tableView reloadData];
+    
+    [self.view addSubview:tableView];
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+}
+
+- (void) viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:YES];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:YES];
+    
+    AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    [appDelegate stopScan];
+}
+
+
+
+- (void)reloadTableViewData{
+    [tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
+
 
 @end
