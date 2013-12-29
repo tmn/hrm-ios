@@ -73,7 +73,6 @@
     [[UINavigationBar appearance] setTitleTextAttributes:navbarTitleTextAttributes];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
     
-//    UIColor *tintColor = [UIColor colorWithRed:37.0/255.0 green:36.0/255.0 blue:48.0/255.0 alpha:1];
     UIColor *tintColor = [UIColor colorWithRed:20.0/255.0 green:133.0/255.0 blue:204.0/255.0 alpha:1];
     if ([[[UINavigationController alloc] init].navigationBar respondsToSelector:@selector(setBarTintColor:)])
     {
@@ -116,7 +115,6 @@
     self.heartRate          = 0;
     self.heartRateMonitors  = [NSMutableArray array];
     
-    
     autoConnect             = TRUE;
     manager                 = [[CBCentralManager alloc] initWithDelegate:self queue:nil];
     
@@ -143,12 +141,14 @@
          }
          else
          {
-             NSLog(@"Lol noobs");
+             NSLog(@"Couldn't connect to Pebble app");
          }
      }];
 }
 
 
+/* Scan for HRM devices
+ -------------------------------------------------------------------------- */
 - (void) startScan
 {
     NSArray *services = @[ [CBUUID UUIDWithString:HRMSERVICEUUID] ];
@@ -220,7 +220,6 @@
     
     if (autoConnect)
     {
-        // [manager retrievePeripheralsWithIdentifiers:[NSArray arrayWithObject:aPeripheral.identifier]];
         [manager retrievePeripherals:[NSArray arrayWithObject:(id)aPeripheral.UUID]];
     }
 }
@@ -242,8 +241,6 @@
 
 - (void)centralManager:(CBCentralManager *)central didRetrievePeripherals:(NSArray *)peripherals
 {
-    // NSLog(@"Retrieved peripherals: %lu - %@", (unsigned long)[peripherals count], peripherals);
-    
     [self stopScan];
     
     if ([peripherals count] > 0)
