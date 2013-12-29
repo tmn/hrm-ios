@@ -19,12 +19,12 @@
 {
     if ([registeredLocations lastObject] != nil)
     {
-        totalDistance += [location distanceFromLocation:[registeredLocations lastObject]];
+        _totalDistance += [location distanceFromLocation:[registeredLocations lastObject]];
     }
     
     
     [self registerLocation:location];
-    [self updateDisplayText:[NSString stringWithFormat:@"%.02f m", totalDistance/1000]];
+    [self updateDisplayText:[NSString stringWithFormat:@"%.02f m", _totalDistance/1000]];
 }
 
 - (void)registerLocation:(CLLocation *)location

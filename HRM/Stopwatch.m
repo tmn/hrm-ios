@@ -45,7 +45,7 @@
         
         startDate           = [NSDate date];
         running             = FALSE;
-        timeInterval        = 0;
+        _timeInterval        = 0;
         
         [self addSubview:timerDisplay];
         [self addSubview:titleText];
@@ -71,7 +71,7 @@
 {
     NSDate *currentDate             = [NSDate date];
     NSTimeInterval timeIntervalTmp  = [currentDate timeIntervalSinceDate:startDate];
-    NSDate *timerDate               = [NSDate dateWithTimeIntervalSince1970:timeInterval + timeIntervalTmp];
+    NSDate *timerDate               = [NSDate dateWithTimeIntervalSince1970:_timeInterval + timeIntervalTmp];
     NSDateFormatter *dateFormatter  = [[NSDateFormatter alloc] init];
     
     [dateFormatter setDateFormat:@"HH:mm:ss"];
@@ -119,7 +119,7 @@
 
 - (void)pauseTimer
 {
-    timeInterval += [[NSDate date] timeIntervalSinceDate:startDate];
+    _timeInterval += [[NSDate date] timeIntervalSinceDate:startDate];
     NSLog(@"Pause timer");
 }
 

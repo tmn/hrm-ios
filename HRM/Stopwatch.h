@@ -18,10 +18,10 @@
     NSDate *startDate;
     NSDate *pauseDate;
     
-    NSTimeInterval timeInterval;
-    
     BOOL running;
 }
+
+@property (nonatomic) NSTimeInterval timeInterval;
 
 - (void)updateTimer;
 - (void)startStopTimer;

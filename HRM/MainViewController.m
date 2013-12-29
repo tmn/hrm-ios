@@ -223,6 +223,8 @@
     
     AppDelegate *appDelegate    = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     [hrmax registerHeartRate:appDelegate.heartRate];
+    
+    [pace calculatePaceFromDistance:[distance totalDistance] time:[stopwatch timeInterval]];
 
 }
 

@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 #import "DataWithSubtitleLabel.h"
 
 @interface Pace : DataWithSubtitleLabel
+
+- (void)calculatePaceFromDistance:(CLLocationDistance) totalDistance time:(NSTimeInterval)timeInterval;
 
 @end

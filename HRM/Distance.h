@@ -12,10 +12,10 @@
 
 @interface Distance : DataWithSubtitleLabel
 {
-    CLLocationDistance totalDistance;
-    
     NSMutableArray *registeredLocations;
 }
+
+@property (nonatomic) CLLocationDistance totalDistance;
 
 - (void)calculateDistanceSinceStart:(id)oldDistance withNewDistance:(id)newDistance;
 
