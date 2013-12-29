@@ -10,11 +10,6 @@
 
 @implementation Distance
 
-- (void)calculateDistanceSinceStart:(id)oldDistance withNewDistance:(id)newDistance
-{
-    
-}
-
 - (void)calculateCurrentDistanceWith:(CLLocation *)location
 {
     if ([registeredLocations lastObject] != nil)
@@ -24,7 +19,7 @@
     
     
     [self registerLocation:location];
-    [self updateDisplayText:[NSString stringWithFormat:@"%.02f m", _totalDistance/1000]];
+    [self updateDisplayText:[NSString stringWithFormat:@"%.02f km", _totalDistance/1000]];
 }
 
 - (void)registerLocation:(CLLocation *)location

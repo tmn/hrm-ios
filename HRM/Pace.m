@@ -12,15 +12,18 @@
 
 - (void)calculatePaceFromDistance:(CLLocationDistance)totalDistance time:(NSTimeInterval)timeInterval
 {
-    float pace = (timeInterval/60) / (totalDistance/1000);
+    NSLog(@"Total Distance: %f", totalDistance);
+    NSLog(@"Time interval: %f", timeInterval);
     
-    if (isnan(pace) || pace <= 0)
+    if (totalDistance > 0 && timeInterval > 0)
     {
-        [self updateDisplayText:[NSString stringWithFormat:@"0.0 min/km"]];
+        float pace = (timeInterval/60) / (totalDistance/1000);
+       
+        [self updateDisplayText:[NSString stringWithFormat:@"%i.%i min/km", (int)pace, (int)((fmod(pace, 1.0)/60*100)*100)]];
     }
     else
     {
-        [self updateDisplayText:[NSString stringWithFormat:@"%i.%i min/km", (int)pace, (int)((fmod(pace, 1.0)/60*100)*100)]];
+        [self updateDisplayText:[NSString stringWithFormat:@"0.0 min/km"]];
     }
 }
 @end

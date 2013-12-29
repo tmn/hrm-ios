@@ -20,6 +20,7 @@
 #import "HRMax.h"
 #import "Elevation.h"
 #import "Speed.h"
+#import "CurrentPace.h"
 
 #import "Common.h"
 #import "AlphaGradientView.h"
@@ -41,6 +42,7 @@
     HRMax *hrmax;
     Elevation *elevation;
     Speed *speed;
+    CurrentPace *currentPace;
     
     MKMapView *map;
     

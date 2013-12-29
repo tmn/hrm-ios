@@ -9,8 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "DataWithSubtitleLabel.h"
 
-@interface HRMax : DataWithSubtitleLabel
+@interface HRMax : UIView
 {
+    UILabel *maxHrTitle;
+    UILabel *maxHr;
+    
     NSInteger maxHeartRate;
 }
 

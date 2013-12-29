@@ -81,6 +81,11 @@
     timerDisplay.text               = timeString;
 }
 
+- (NSTimeInterval)getCurrentTimeInterval
+{
+    return _timeInterval + [[NSDate date] timeIntervalSinceDate:startDate];
+}
+
 - (void)startStopTimer
 {
 

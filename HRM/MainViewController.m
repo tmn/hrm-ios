@@ -80,19 +80,21 @@
                                       displayText:@"0"
                                      displayTitle:@"calories burned"
                                         alignment:NSTextAlignmentLeft];
-    hrmax       = [[HRMax alloc] initWithFrame:CGRectMake(0, 230, 320, 60)
-                                   displayText:@"0"
-                                  displayTitle:@"Max BPM"
+    speed       = [[Speed alloc] initWithFrame:CGRectMake(0, 230, 320, 60)
+                                   displayText:@"0 km/h"
+                                  displayTitle:@"speed"
                                      alignment:NSTextAlignmentRight];
+    
+    
     
     pace        = [[Pace alloc] initWithFrame:CGRectMake(15, 290, 320, 60)
                                   displayText:@"0.0 min/km"
                                  displayTitle:@"avg. pace"
                                     alignment:NSTextAlignmentLeft];
-    speed       = [[Speed alloc] initWithFrame:CGRectMake(0, 290, 320, 60)
-                                   displayText:@"0 km/h"
-                                  displayTitle:@"speed"
-                                     alignment:NSTextAlignmentRight];
+    currentPace = [[CurrentPace alloc] initWithFrame:CGRectMake(0, 290, 320, 60)
+                                         displayText:@"0.0 min/km"
+                                        displayTitle:@"current pace"
+                                           alignment:NSTextAlignmentRight];
     
     elevation   = [[Elevation alloc] initWithFrame:CGRectMake(15, 350, 320, 60)
                                        displayText:@"0 m"
@@ -102,6 +104,9 @@
                                       displayText:@"0 km"
                                      displayTitle:@"total distance"
                                         alignment:NSTextAlignmentRight];
+    
+    hrmax       = [[HRMax alloc] initWithFrame:CGRectMake(15, 112, 305, 30)];
+    
     
     /* Location manager
     -------------------------------------------------------------------------- */
@@ -132,7 +137,6 @@
     NSString *bpmFooterText     = @"BPM";
     CGSize footerLabelSize      = [Common setSizeWithAttributeOn:bpmFooterText with:bpmFooterFont];
     
-    
     bpmFooter = [[UILabel alloc] initWithFrame:CGRectMake(80, 85, footerLabelSize.width, footerLabelSize.height)];
     bpmFooter.text = bpmFooterText;
     bpmFooter.font = bpmFooterFont;
@@ -140,6 +144,7 @@
     bpmFooter.textColor = [UIColor colorWithRed:9.0/255.0 green:113.0/255.0 blue:178.0/255.0 alpha:1];
     bpmFooter.textAlignment = NSTextAlignmentLeft;
     bpmFooter.backgroundColor = [UIColor clearColor];
+    
     
     
     /* Start/stop button
@@ -162,10 +167,11 @@
     
     [self.view addSubview:stopwatch];
     [self.view addSubview:calories];
-    [self.view addSubview:distance];
-    [self.view addSubview:pace];
     [self.view addSubview:speed];
+    [self.view addSubview:pace];
+    [self.view addSubview:currentPace];
     [self.view addSubview:elevation];
+    [self.view addSubview:distance];
     [self.view addSubview:hrmax];
     
 }
@@ -218,14 +224,14 @@
     {
         [elevation updateDisplayText:[NSString stringWithFormat:@"%.02f m", locationManager.location.altitude]];
         [distance calculateCurrentDistanceWith:location];
+        [currentPace calculcateCurrentPace:[location speed]];
         [speed updateDisplayText:[NSString stringWithFormat:@"%.1f km/h", [location speed]*3600/1000]];
     }
     
     AppDelegate *appDelegate    = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     [hrmax registerHeartRate:appDelegate.heartRate];
     
-    [pace calculatePaceFromDistance:[distance totalDistance] time:[stopwatch timeInterval]];
-
+    [pace calculatePaceFromDistance:[distance totalDistance] time:[stopwatch getCurrentTimeInterval ]];
 }
 
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation

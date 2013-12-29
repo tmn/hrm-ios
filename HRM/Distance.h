@@ -17,8 +17,6 @@
 
 @property (nonatomic) CLLocationDistance totalDistance;
 
-- (void)calculateDistanceSinceStart:(id)oldDistance withNewDistance:(id)newDistance;
-
 - (void)calculateCurrentDistanceWith:(CLLocation *)location;
 - (void)resetRegisteredLocations;
 - (void)registerLocation:(CLLocation *)location;

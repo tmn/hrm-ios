@@ -26,5 +26,6 @@
 - (void)updateTimer;
 - (void)startStopTimer;
 - (void)resetStopTimer;
+- (NSTimeInterval)getCurrentTimeInterval;
 
 @end

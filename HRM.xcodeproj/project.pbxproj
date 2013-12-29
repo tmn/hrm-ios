@@ -17,6 +17,8 @@
 		A61047C0186F0D16002F99B8 /* Elevation.m in Sources */ = {isa = PBXBuildFile; fileRef = A61047BF186F0D16002F99B8 /* Elevation.m */; };
 		A61047C3186F0D1E002F99B8 /* Speed.m in Sources */ = {isa = PBXBuildFile; fileRef = A61047C2186F0D1E002F99B8 /* Speed.m */; };
 		A61047C6186F2DD0002F99B8 /* DataWithSubtitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A61047C5186F2DD0002F99B8 /* DataWithSubtitleLabel.m */; };
+		A61047CC186FAD74002F99B8 /* CurrentPace.m in Sources */ = {isa = PBXBuildFile; fileRef = A61047CB186FAD74002F99B8 /* CurrentPace.m */; };
+		A61047CF186FB0BE002F99B8 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = A61047CE186FB0BE002F99B8 /* Test.m */; };
 		A62EAA4A186C6E1C005FCF8C /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A62EAA49186C6E1C005FCF8C /* AboutViewController.m */; };
 		A63DFDAD186DE2D10017AA2C /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = A63DFDAC186DE2D10017AA2C /* Common.m */; };
 		A63DFDB0186DF8240017AA2C /* AlphaGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = A63DFDAF186DF8240017AA2C /* AlphaGradientView.m */; };
@@ -83,6 +85,10 @@
 		A61047C2186F0D1E002F99B8 /* Speed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Speed.m; sourceTree = "<group>"; };
 		A61047C4186F2DD0002F99B8 /* DataWithSubtitleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataWithSubtitleLabel.h; sourceTree = "<group>"; };
 		A61047C5186F2DD0002F99B8 /* DataWithSubtitleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataWithSubtitleLabel.m; sourceTree = "<group>"; };
+		A61047CA186FAD74002F99B8 /* CurrentPace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentPace.h; sourceTree = "<group>"; };
+		A61047CB186FAD74002F99B8 /* CurrentPace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentPace.m; sourceTree = "<group>"; };
+		A61047CD186FB0BE002F99B8 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		A61047CE186FB0BE002F99B8 /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
 		A62EAA48186C6E1C005FCF8C /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		A62EAA49186C6E1C005FCF8C /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		A63DFDAB186DE2D10017AA2C /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
@@ -186,10 +192,14 @@
 				A6076762186CC7210032CF59 /* Pace.m */,
 				A6076767186CC73E0032CF59 /* HRMax.h */,
 				A6076768186CC73E0032CF59 /* HRMax.m */,
+				A61047CD186FB0BE002F99B8 /* Test.h */,
+				A61047CE186FB0BE002F99B8 /* Test.m */,
 				A61047BE186F0D16002F99B8 /* Elevation.h */,
 				A61047BF186F0D16002F99B8 /* Elevation.m */,
 				A61047C1186F0D1E002F99B8 /* Speed.h */,
 				A61047C2186F0D1E002F99B8 /* Speed.m */,
+				A61047CA186FAD74002F99B8 /* CurrentPace.h */,
+				A61047CB186FAD74002F99B8 /* CurrentPace.m */,
 			);
 			name = Modules;
 			sourceTree = "<group>";
@@ -500,8 +510,10 @@
 				A63DFDAD186DE2D10017AA2C /* Common.m in Sources */,
 				A6F20CB7186927B400EF2CD0 /* AppDelegate.m in Sources */,
 				A6F20D5A186B813900EF2CD0 /* SettingsViewController.m in Sources */,
+				A61047CF186FB0BE002F99B8 /* Test.m in Sources */,
 				A6F20D53186B7B7000EF2CD0 /* MMDrawerBarButtonItem.m in Sources */,
 				A61047C6186F2DD0002F99B8 /* DataWithSubtitleLabel.m in Sources */,
+				A61047CC186FAD74002F99B8 /* CurrentPace.m in Sources */,
 				A6F20CD9186939B400EF2CD0 /* PairPickViewController.m in Sources */,
 				A6F20D47186B784A00EF2CD0 /* DashboardViewController.m in Sources */,
 				A6076766186CC72A0032CF59 /* Distance.m in Sources */,
