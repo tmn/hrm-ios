@@ -15,6 +15,8 @@
 - (void)loadView
 {
     [super loadView];
+    runningActive = NO;
+    
     map = [[MKMapView alloc] initWithFrame:CGRectMake(0, 0, 320, self.view.frame.size.height)];
     map.delegate = self;
     
@@ -220,18 +222,21 @@
 
 - (void)updateInformationWithLocation:(CLLocation *)location
 {
-    if (location != nil)
+    if (runningActive)
     {
-        [elevation updateDisplayText:[NSString stringWithFormat:@"%.02f m", locationManager.location.altitude]];
-        [distance calculateCurrentDistanceWith:location];
-        [currentPace calculcateCurrentPace:[location speed]];
-        [speed updateDisplayText:[NSString stringWithFormat:@"%.1f km/h", [location speed]*3600/1000]];
+        if (location != nil)
+        {
+            [elevation updateDisplayText:[NSString stringWithFormat:@"%.02f m", locationManager.location.altitude]];
+            [distance calculateCurrentDistanceWith:location];
+            [currentPace calculcateCurrentPace:[location speed]];
+            [speed updateDisplayText:[NSString stringWithFormat:@"%.1f km/h", [location speed]*3600/1000]];
+        }
+        
+        AppDelegate *appDelegate    = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+        [hrmax registerHeartRate:appDelegate.heartRate];
+        
+        [pace calculatePaceFromDistance:[distance totalDistance] time:[stopwatch getCurrentTimeInterval ]];
     }
-    
-    AppDelegate *appDelegate    = (AppDelegate*)[[UIApplication sharedApplication] delegate];
-    [hrmax registerHeartRate:appDelegate.heartRate];
-    
-    [pace calculatePaceFromDistance:[distance totalDistance] time:[stopwatch getCurrentTimeInterval ]];
 }
 
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
@@ -252,6 +257,15 @@
 - (IBAction) startStopButtonPressed:(id)sender
 {
     [stopwatch startStopTimer];
+    
+    if (runningActive)
+    {
+        runningActive = NO;
+    }
+    else
+    {
+        runningActive = YES;
+    }
 }
 
 - (void)reloadBpm

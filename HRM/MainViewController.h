@@ -49,6 +49,8 @@
     UIImageView *backgroundImage;
     
     CLLocationManager* locationManager;
+    
+    BOOL runningActive;
 }
 
 
