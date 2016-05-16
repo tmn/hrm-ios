@@ -23,7 +23,7 @@
 #import "CurrentPace.h"
 
 #import "Common.h"
-#import "AlphaGradientView.h"
+// #import "AlphaGradientView.h"
 
 #import "UIViewController+MMDrawerController.h"
 

@@ -24,13 +24,15 @@
     [mapOpacityView setBackgroundColor:[UIColor blackColor]];
     mapOpacityView.alpha = 0.6;
     
-    AlphaGradientView *mapGradientView = [[AlphaGradientView alloc] initWithFrame:CGRectMake(0, 0, 320, self.view.frame.size.height)];
+    
+    /*AlphaGradientView *mapGradientView = [[AlphaGradientView alloc] initWithFrame:CGRectMake(0, 0, 320, self.view.frame.size.height)];
     
     [mapGradientView setColor:[UIColor colorWithRed:13.0/255.0 green:13.0/255.0 blue:22.0/255.0 alpha:1]];
 
     [self.view addSubview:mapGradientView];
     [self.view sendSubviewToBack:mapGradientView];
-
+     */
+    
     [self.view addSubview:mapOpacityView];
     [self.view sendSubviewToBack:mapOpacityView];
     
